@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>12232/231313</div>
+	<script>
+		(function(argument) {
+			var aa = document.getElementsByTagName('div')[0];
+			var a = aa.innerHTML;
+			console.log(a);
+			var temp1 = a.match(/^[0-9]+\.{0,1}[0-9]{0,2}/);
+			var temp2 = a.match(/[\+\-\*\/][0-9]+\.{0,1}[0-9]{0,2}/g)
+			var temp =  temp2.join().substring(1);
+			console.log(temp)
+			 //console.log( a.substring(0, a.indexOf("+") ) ) ;
+		})()
+	</script>
+</body>
+</html>
